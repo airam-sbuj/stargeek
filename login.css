@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 84% auto;
+    grid-template-areas: 
+    "h"
+    "c"
+    "r";
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  header{
+    grid-area:h;
+    background-color:#2B302C ;
+    width: 100%;
+    padding: 12px;
+}
+
+header > img{
+  margin-left: 22px;
+}
+
+  main{
+    grid-area: c;
+    background-color:#D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer{
+    grid-area: r;
+    background-color: #2B302C; 
+    height: 38px;
+  }
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
+
+form > label{
+  margin: 10px 0;
+}
+
+form > input  {
+  font-size: 3rem;
+  background-color: #9ADB9C;
+  color: black;
+}
+
+form > input:focus{
+  background-color: #9ADB9C;
+}
+
+form > label{
+  font-size: 2rem;
+}
+
+.botao{
+  display: flex;
+  justify-content: center;
+}
+
+input[type="submit"]{
+  margin-top: 20px;
+  background-color: #68CC6C;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 50%;
+  font-size: 3rem;
+}
+
+input[type="submit"]:hover{
+  background-color: #68CC6C;
+  color: white;
+}
+
+.caixa{
+  background-color: rgba(123, 119, 119, 0.7);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+btn-01{
+    padding:10px 20px;
+    border-radius: 15px;
+    padding-left: 150px;
+    padding-right: 100px;
+    font-weight: 600;                   ;
+    background-color: #3D735C;
+    color: #2B302C; 
+    position: absolute;
+    top: 423px;
+    left: 700px;
+    height: 65px;
+    width: 400px;
+    font-size: 30px;
+}
+
+btn-01 :hover{
+  background-color: rgb(233, 230, 277);
+  transform: scale(1.0);
+  transition: 0.5s;
+  box-shadow: #3D735C 4px 4px 8px;
+}
+
+

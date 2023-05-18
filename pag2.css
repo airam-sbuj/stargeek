@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+   
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "h"
+        "c"
+        "r";
+}
+
+header{
+    grid-area:h;
+    background-color:#2B302C;
+    width: 100%;
+    padding: 12px;
+}
+
+header > img{
+  margin-left: 22px;
+}
+
+main{
+    grid-area: c;
+    height: 1000px;
+    width: 100% ;
+    background-color: #A0B9A1;
+  }
+  
+  footer{
+    grid-area: r;
+    height: 38px;
+    width: 100%;
+    background-color:#2B302C ;
+  }
+  
+  .btn-01{
+    padding:10px 20px;
+    border-radius: 15px;
+    padding-left: 150px;
+    padding-right: 100px;
+    font-weight: 600;                   ;
+    background-color: #3D735C;
+    color: #2B302C; 
+    position: absolute;
+    top: 423px;
+    left: 700px;
+    height: 65px;
+    width: 400px;
+    font-size: 30px;
+  }
+
+  
+.btn-01:hover{
+  background-color: rgb(233, 230, 277);
+  transform: scale(1.0);
+  transition: 0.5s;
+  box-shadow: #3D735C 4px 4px 8px;
+}
+
+.btn-02{
+  padding:10px 20px;
+  border-radius: 15px;
+  padding-left: 130px;
+  padding-right: 100px;
+  font-weight: 600;                   ;
+  background-color: #3D735C;
+  color: #2B302C; 
+  position: absolute;
+  top: 599px;
+  left: 700px;
+  height: 65px;
+  width: 400px;
+  font-size: 30px;
+}
+
+.btn-02:hover{
+  background-color: rgb(233, 230, 277);
+  transform: scale(1.0);
+  transition: 0.5s;
+  box-shadow: #3D735C 4px 4px 8px;
+}
+
+
+
+
+
+

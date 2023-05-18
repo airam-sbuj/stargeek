@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../starcoffe"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "stargeek"
+	}
+}
