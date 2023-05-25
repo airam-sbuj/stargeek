@@ -18,9 +18,33 @@
         <h2>
             Filme
         </h2>
-        <img src="imagens/Rectangle 104coringa.jpg" alt="filme">
-        <a href="#" class="btn-01">></a>
+
+        <div class="container">
+            <button id="btn">Cadastrar item</button>
+            <div class="mensagem"></div>
+            <div class="cards">
+            </div>
+        
+        <div class="cadmodal">
+            <div class="modal">
+            <form action="" id="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="descricao">Descrição</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+                <label for="foto">Foto</label>
+                <input type="file" name="foto" id="foto">
+                <button class="btncadastrar"> Cadastrar</button>
+                <button class="btneditar">Editar</button>
+                <input type="hidden" id="idalterar">
+            </form>
+            <button id="btnclose" onclick="fechar()">Fechar</button>
+        </div>
+        </div>
+
+    </div>
       </main>
       <footer></footer>
+      <script src="filmes.js"></script>
 </body>
 </html>
