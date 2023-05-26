@@ -60,7 +60,7 @@ function carregarcatalogo(){
     }
 
     dados.forEach((elemento, indice) => {
-        if (elemento.categoria == "L"){
+        if (elemento.categoria == "S"){
         let divcard = document.createElement("div")
         divcard.innerHTML = `
         <div class = "cardimagem"><img src="img/${elemento.foto}"></div>

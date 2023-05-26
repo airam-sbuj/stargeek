@@ -9,6 +9,8 @@ const botaocadastrar = document.querySelector(".btncadastrar");
 const botaoeditar = document.querySelector(".btneditar");
 const botaofechar = document.querySelector(".btnclose");
 const idelemento = document.getElementById("idalterar");
+const categoria = document.getElementById("icategoria");
+
 
 carregarcatalogo();
 
@@ -31,6 +33,7 @@ botaocadastrar.onclick = (evento) =>{
         {
             nome : nome.value,
             descricao : descricao.value,
+            categoria: categoria.value,
             foto  : nomeArq,        
         }
     )
@@ -58,6 +61,7 @@ function carregarcatalogo(){
     }
 
     dados.forEach((elemento, indice) => {
+        if (elemento.categoria == "F"){
         let divcard = document.createElement("div")
         divcard.innerHTML = `
         <div class = "cardimagem"><img src="img/${elemento.foto}"></div>
@@ -70,6 +74,7 @@ function carregarcatalogo(){
         </div>
         `
         cards.appendChild(divcard);
+        }
     }
     )
 }

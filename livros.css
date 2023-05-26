@@ -121,7 +121,8 @@ form{
   .cards {
     width: 100vw;
     margin: 10px 10px;
-    display: flex;
+    display: fleX;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
@@ -154,7 +155,7 @@ form{
     color: white;
     font-size: 20px;
     font-weight: bold;
-    background-color: rgb(253, 38, 124);
+  background-color: #68CC6C;
     text-align: center;
     margin-top: -5px;
     padding: 20px;
