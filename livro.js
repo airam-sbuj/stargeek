@@ -33,7 +33,8 @@ botaocadastrar.onclick = (evento) =>{
             nome : nome.value,
             descricao : descricao.value,
             categoria: categoria.value,
-            foto  : nomeArq,        
+            foto  : nomeArq,
+            email : emaillogado        
         }
     )
 

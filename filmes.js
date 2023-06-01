@@ -11,7 +11,8 @@ const botaofechar = document.querySelector(".btnclose");
 const idelemento = document.getElementById("idalterar");
 const categoria = document.getElementById("icategoria");
 
-
+var emaillogado;
+femailLogado();
 carregarcatalogo();
 
 botaomodal.onclick = () => {
@@ -34,7 +35,8 @@ botaocadastrar.onclick = (evento) =>{
             nome : nome.value,
             descricao : descricao.value,
             categoria: categoria.value,
-            foto  : nomeArq,        
+            foto  : nomeArq,  
+            email : emaillogado      
         }
     )
 
@@ -116,6 +118,7 @@ function salvarEdicao(pfoto){
     dados[idelemento.value].nome = nome.value;
     dados[idelemento.value].descricao = descricao.value;
     dados[idelemento.value].foto = pfoto;
+    dados[idelemento.value].email = emaillogado;
     localStorage.setItem("catalogo", JSON.stringify(dados));
 }
 
@@ -160,4 +163,13 @@ catch (error) {
 console.error(error);
 return false;
 }
+}
+
+function femailLogado(){
+    let dados = sessionStorage.getItem("logado");
+    if(dados == null){
+        window.location.assign("login.html");
+    } else{
+        emaillogado = dados
+    }
 }
